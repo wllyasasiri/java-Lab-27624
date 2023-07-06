@@ -1,0 +1,34 @@
+package javaapplication18;
+
+
+public class cylindrical extends container {
+    private double height;
+    private double radius;
+    
+    public cylindrical(double h,double r)
+    {
+            height=h;
+            radius=r;
+    }
+    public double volume ()
+    {
+    double volume=PI*radius*radius*height;
+    return volume;
+    }  
+}
+package javaapplication18;
+
+public abstract class container {
+    final float PI=3.14159f;
+    public abstract double volume();
+
+ public class JavaApplication18 {
+
+    
+    public static void main(String[] args) {
+        cylindrical c1=new cylindrical(2.0,4.0);
+        System.out.println(c1. volume());
+        
+    }
+    
+}   
